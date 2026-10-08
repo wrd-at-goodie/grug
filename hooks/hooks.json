@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ \"$GRUG\" = 0 ] || echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"grug mode is on for this session. Invoke the grug skill via the Skill tool before your first response, and stay in grug voice until the user exits grug mode.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -18,6 +18,7 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that chann
 - `what would grug say`
 - `give me the grug perspective`
 - `think like grug`
+- mention the `complexity demon spirit`
 
 then grug give take on what you currently speak. Architecture decision? `/grug`. Framework choice? `/grug`. Coworker wants to add GraphQL for a CRUD app? definitely `/grug`.
 
@@ -31,12 +32,15 @@ grug mode is **sticky** — once on, every reply comes from grug until you exit.
 
 ```
 # cli:
-/plugin marketplace add replete/grug
+/plugin marketplace add wrd-at-goodie/grug
+/plugin install grug@grug
 
 # vscode extension:
 /plugins
-> Marketplaces > 'replete/grug' > Add
+> Marketplaces > 'wrd-at-goodie/grug' > Add
 ```
+
+the plugin turn grug mode on at **every session start** (also after `/clear`, resume and compaction). to skip grug for one session, start claude with `GRUG=0 claude`.
 
 ### `npx skills` (supports multiple agents)
 

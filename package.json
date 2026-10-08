@@ -1,7 +1,7 @@
 {
   "name": "grug",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
-    "build": "cp grug/SKILL.md .claude-plugin/skills/grug/SKILL.md && zip -r grug.skill grug/"
+    "build": "cp grug/SKILL.md skills/grug/SKILL.md && zip -r grug.skill grug/"
   }
 }
